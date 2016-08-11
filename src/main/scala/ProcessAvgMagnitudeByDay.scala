@@ -20,7 +20,7 @@ class ProcessAvgMagnitudeByDay(sqlContext: SQLContext) extends Serializable{
       val state = x.getAs[String]("state")
       val city = x.getAs[String]("city")
       val date = x.getAs[String]("date")
-      val average = x.getAs[java.math.BigDecimal]("average")
+      val average = x.getAs[Double]("average")
       EarthquakeMagnitudeAvgByDay(state, city, date, average)
     }
 
@@ -30,7 +30,7 @@ class ProcessAvgMagnitudeByDay(sqlContext: SQLContext) extends Serializable{
 
   }
 
-  case class EarthquakeMagnitudeAvgByDay(state: String, city: String, date: String, average: java.math.BigDecimal)
+  case class EarthquakeMagnitudeAvgByDay(state: String, city: String, date: String, average: Double)
 
 }
 
