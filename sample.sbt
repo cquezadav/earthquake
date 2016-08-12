@@ -14,3 +14,6 @@ libraryDependencies += "org.scalaj" %% "scalaj-http" % "2.3.0"
 libraryDependencies += "io.spray" %%  "spray-json" % "1.3.2"
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "1.6.1"
 libraryDependencies += "com.datastax.spark" %% "spark-cassandra-connector" % "1.6.0"
+libraryDependencies += "org.apache.spark" %% "spark-streaming" % "1.6.0" % "provided"
+libraryDependencies += ("org.apache.spark" %% "spark-streaming-kafka" % "1.6.0").exclude("org.spark-project.spark", "unused")
+libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "2.12.0"

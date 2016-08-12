@@ -1,6 +1,5 @@
 <classpath>
   <classpathentry kind="src" path="src/main/scala"/>
-  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
   <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.scalaj/scalaj-http_2.11/jars/scalaj-http_2.11-2.3.0.jar"/>
   <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/io.spray/spray-json_2.11/bundles/spray-json_2.11-1.3.2.jar"/>
   <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-1.6.1.jar"/>
@@ -104,8 +103,6 @@
   <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar"/>
   <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.11.0.jar"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_COMPILER_CONTAINER"/>
-  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar"/>
-  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar"/>
   <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/com.sun.jersey/jersey-core/bundles/jersey-core-1.9.jar"/>
   <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.apache.mesos/mesos/jars/mesos-0.21.1-shaded-protobuf.jar"/>
   <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/com.clearspring.analytics/stream/jars/stream-2.7.0.jar"/>
@@ -144,8 +141,18 @@
   <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/io.netty/netty-codec/jars/netty-codec-4.0.33.Final.jar"/>
   <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar"/>
   <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.2.jar"/>
-  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar"/>
   <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/com.twitter/jsr166e/jars/jsr166e-1.1.0.jar"/>
+  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.apache.spark/spark-streaming-kafka_2.11/jars/spark-streaming-kafka_2.11-1.6.0.jar"/>
+  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.apache.kafka/kafka_2.11/jars/kafka_2.11-0.8.2.1.jar"/>
+  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.2.jar"/>
+  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar"/>
+  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.2.jar"/>
+  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.3.jar"/>
+  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.8.2.1.jar"/>
+  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/jars/nscala-time_2.11-2.12.0.jar"/>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
+  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.3.jar"/>
+  <classpathentry kind="lib" path="/Users/carlos.quezada/.ivy2/cache/org.apache.spark/spark-streaming_2.11/jars/spark-streaming_2.11-1.6.0.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
 </classpath>
