@@ -24,13 +24,21 @@ class ProcessRawData() extends Serializable {
         "features.properties.magType", "features.properties.tsunami", "features.properties.type", "features.properties.alert",
         "features.properties.sig", "features.properties.net", "features.id")
 
-    val parseStateAndCityPattern = """^.* of (.*)\s*,\s*(.*)\s*$""".r
+    val parseStateAndCityPatternFirstPass = """^.* of (.*)\s*,\s*(.*)\s*$""".r
+    val parseStateAndCityPatternSecondPass = """^\s*(.*)\s*,\s*(.*)\s*$""".r
 
     def parseStateAndCity(str: String): (String, String) = {
-      val allMatches = parseStateAndCityPattern.findAllMatchIn(str)
+      val firstPass = parseStateAndCityPatternFirstPass.findAllMatchIn(str)
       var stateCity: (String, String) = ("Unknown", "Unknown")
-      allMatches.foreach { x =>
-        stateCity = (x.group(2), x.group(1))
+      if (firstPass.hasNext) {
+        firstPass.foreach { x =>
+          stateCity = (x.group(2), x.group(1))
+        }
+      } else {
+        val secondPass = parseStateAndCityPatternSecondPass.findAllMatchIn(str)
+        secondPass.foreach { x =>
+          stateCity = (x.group(2), x.group(1))
+        }
       }
       return stateCity
     }
